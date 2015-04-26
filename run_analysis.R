@@ -1,6 +1,6 @@
 if(!file.exists("c:/data/data_2")){dir.create("c:/data/data_2")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl,destfile="./data/Dataset.zip",method="curl")
+download.file(fileUrl,destfile="c:/data/data_2/Dataset.zip", method = "curl")
 
 #Unzip the file
 unzip(zipfile="c:/data/data_2/Dataset.zip",exdir="c:/data/data_2")
